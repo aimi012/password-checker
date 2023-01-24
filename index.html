@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Try this :</h1>
+    <ul></ul>
+  </body>
+  <script>
+    const number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    const rNumber1 = getRandom().toString();
+    const rNumber2 = getRandom().toString();
+    const rNumber3 = getRandom().toString();
+    const rNumber4 = getRandom().toString();
+    const actualNumber1 = rNumber1+rNumber2+rNumber3+rNumber4
+    const actualNumber2 = rNumber1+rNumber2+rNumber3+rNumber4
+    const actualNumber3 = rNumber1+rNumber2+rNumber3+rNumber4
+    const actualNumber4 = rNumber1+rNumber2+rNumber3+rNumber4
+
+    function getRandom () {
+        const rNumber = Math.floor(Math.random() * number.length);
+        return rNumber
+    }
+
+    const number1 = document.querySelector("h1")
+
+    number1.innerHTML = actualNumber1
+
+
+  </script>
+</html>
